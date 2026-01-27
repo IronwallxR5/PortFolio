@@ -60,41 +60,51 @@ const AboutMe = () => {
             <div className="container relative z-[1]" ref={container}>
                 <p className="pb-3 border-b border-border/50 text-muted-foreground slide-up-and-fade flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                    This is me.
+                    About Me
                 </p>
 
                 <div className="grid md:grid-cols-12 mt-9 gap-8">
                     <div className="md:col-span-5">
                         <p className="text-4xl md:text-5xl slide-up-and-fade leading-tight">
-                            Hi, I&apos;m{' '}
+                            Hey, I&apos;m{' '}
                             <span className="gradient-text-static font-semibold">
                                 {GENERAL_INFO.name}
                             </span>
-                            .
+                            <span className="inline-block animate-bounce ml-2">👋</span>
+                        </p>
+                        <p className="slide-up-and-fade text-muted-foreground mt-4 text-lg">
+                            B.Tech AI/ML Student @ NST, Pune
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[500px]">
                             <p className="slide-up-and-fade leading-relaxed">
-                                Passionate about crafting{' '}
+                                I&apos;m a{' '}
                                 <span className="text-foreground font-medium">
-                                    innovative solutions
+                                    Full Stack Developer
                                 </span>{' '}
-                                that bridge technology and user needs. Every
-                                line of code tells a story of dedication and
-                                creativity.
+                                who loves turning ideas into reality through code. 
+                                From building AI-powered apps to crafting smooth user experiences, 
+                                I enjoy every part of the development journey.
                             </p>
                             <p className="mt-4 slide-up-and-fade leading-relaxed">
-                                My approach focuses on creating{' '}
+                                When I&apos;m not coding, you&apos;ll find me solving problems on{' '}
                                 <span className="text-foreground font-medium">
-                                    scalable, high-performing solutions
-                                </span>{' '}
-                                that prioritize performance, user experience, and deliver
-                                tangible results. I love building with{' '}
+                                    LeetCode & Codeforces
+                                </span>
+                                , exploring new technologies, or building side projects. 
+                                I work with{' '}
                                 <span className="gradient-text-static font-medium">
-                                    React, Node.js, and TypeScript
+                                    React, Node.js, Python & AI/ML
                                 </span>
                                 .
+                            </p>
+                            <p className="mt-4 slide-up-and-fade leading-relaxed">
+                                Currently obsessed with{' '}
+                                <span className="text-foreground font-medium">
+                                    AI/ML, building intelligent apps, and pushing pixels to perfection
+                                </span>
+                                . Always learning, always shipping! 🚀
                             </p>
                         </div>
                     </div>

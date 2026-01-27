@@ -8,7 +8,7 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Padam, I am reaching out to you because...',
 
-    professionalSummary: `Full Stack Developer passionate about building modern web applications with React, Node.js, and TypeScript. Creating elegant solutions for complex problems.`,
+    professionalSummary: `I build things that live on the internet. Full Stack Developer crafting sleek, high-performance web apps with React, Node.js & AI. Turning caffeine into code, one commit at a time.`,
 };
 
 export const SOCIAL_LINKS = [
@@ -48,10 +48,6 @@ export const MY_STACK = {
             category: 'Frontend',
         },
         {
-            name: 'Next.js',
-            category: 'Frontend',
-        },
-        {
             name: 'Tailwind CSS',
             category: 'Frontend',
         },
@@ -63,10 +59,6 @@ export const MY_STACK = {
         },
         {
             name: 'Express.js',
-            category: 'Backend',
-        },
-        {
-            name: 'FastAPI',
             category: 'Backend',
         },
     ],
@@ -106,41 +98,44 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'YogaFlow',
-        slug: 'yogaflow',
-        liveUrl: 'https://yoga-app-eight-kappa.vercel.app',
-        sourceCode: 'https://github.com/VIDHITTS/Yoga-App.git',
+        title: 'Yoga RAG',
+        slug: 'yoga-rag',
+        liveUrl: 'https://yoga-y5yy.vercel.app',
+        sourceCode: 'https://github.com/IronwallxR5/yoga',
         year: 2026,
         description: `
-      Built YogaFlow, an AI-powered yoga wellness chatbot leveraging RAG (Retrieval-Augmented Generation) architecture for intelligent, context-aware responses with seamless source attribution. <br/> <br/>
+      Built an AI-powered Yoga Assistant using RAG (Retrieval-Augmented Generation) architecture for intelligent, context-aware yoga guidance with safety-first recommendations. <br/><br/>
       
       Key Features:<br/>
       <ul>
-        <li>RAG architecture for context-aware knowledge retrieval</li>
-        <li>Real-time safety detection and smart safety pivots</li>
-        <li>Personalized yoga recommendations and guidance</li>
-        <li>Secure query logging and conversation history</li>
-        <li>Contextual LLM responses with source attribution</li>
-        <li>Vector-based semantic search using Pinecone</li>
+        <li>Unified LLM Review - Single point checks topic, safety, and intent</li>
+        <li>Smart Query Classification - Handles greetings, off-topic, and medical queries</li>
+        <li>Safety-First Design - Detects medical conditions with LLM + keyword fallback</li>
+        <li>Source Attribution - Every answer shows which articles were used</li>
+        <li>Real-time Vector Search - Fast semantic search using Pinecone</li>
+        <li>Zen Visual Theme - Calming Sage Green/Tan palette for stress-free UX</li>
+        <li>User Feedback System - Thumbs up/down to rate answers</li>
       </ul><br/>
       
       Technical Highlights:
       <ul>
-        <li>Full-stack AI platform with React frontend and Node.js backend</li>
-        <li>Pinecone vector database for efficient knowledge retrieval</li>
-        <li>MongoDB for persistent storage and user data</li>
-        <li>Transformers.js embeddings for semantic understanding</li>
-        <li>LLM integration for intelligent response generation</li>
+        <li>Full-stack RAG pipeline with React frontend and Node.js backend</li>
+        <li>Pinecone vector database for efficient 384-dimensional embeddings</li>
+        <li>Transformers.js for local, privacy-first embedding generation</li>
+        <li>Google Gemini 1.5 Flash for intelligent response generation</li>
+        <li>MongoDB for query logging and analytics</li>
+        <li>97% faster rejection of invalid queries (50ms vs 1500ms)</li>
       </ul>
       `,
         role: `
       Full-Stack AI Developer <br/>
       <ul>
-        <li>Backend: Built RAG pipeline with Pinecone and LLM integration</li>
-        <li>Frontend: Created interactive chat interface with React</li>
-        <li>Safety: Implemented real-time safety detection and smart pivots</li>
-        <li>Embeddings: Integrated Transformers.js for semantic search</li>
-        <li>Database: Designed MongoDB schema for query logging</li>
+        <li>Backend: Built unified query review system with LLM-based safety detection</li>
+        <li>RAG Pipeline: Implemented vector search with Pinecone and Transformers.js</li>
+        <li>Safety System: Created medical condition detection with keyword fallback</li>
+        <li>Frontend: Designed calming Zen-themed React UI for yoga guidance</li>
+        <li>Database: Integrated MongoDB for comprehensive query analytics</li>
+        <li>API: Developed RESTful endpoints for Q&A, feedback, and stats</li>
       </ul>
       `,
         techStack: [
@@ -149,99 +144,17 @@ export const PROJECTS: IProject[] = [
             'Pinecone',
             'MongoDB',
             'Transformers.js',
-            'LLM',
+            'Google Gemini',
             'RAG',
+            'Express.js',
         ],
         thumbnail: '/projects/images/yogaflow-1.png',
         longThumbnail: '/projects/images/yogaflow-1.png',
         images: [
             '/projects/images/yogaflow-1.png',
+            '/projects/images/yogaflow-2.png',
+            '/projects/images/yogaflow-3.png',
         ],
-    },
-    {
-        title: 'Business Segmenter',
-        slug: 'businesssegmenter',
-        liveUrl:
-            'https://business-segmentergit-mer9ifjsappyjyd3au4gwen.streamlit.app/',
-        sourceCode: 'https://github.com/VIDHITTS/Business-Segmenter.git',
-        year: 2025,
-        description: `
-      Built Business Segmenter using Python, Streamlit, and scikit-learn, implementing automated K-Means clustering and Apriori market basket analysis for data-driven customer insights and optimized product bundling strategies. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>Automated K-Means clustering for customer segmentation</li>
-        <li>Apriori market basket analysis for product bundling</li>
-        <li>Interactive visualizations for data insights</li>
-        <li>Real-time customer segmentation</li>
-        <li>Campaign generation with smart parameter automation</li>
-        <li>Responsive dashboard for actionable business intelligence</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Developed analytics platform for real-time segmentation</li>
-        <li>Implemented robust data processing pipelines</li>
-        <li>Created interactive visualizations for business insights</li>
-        <li>Built smart parameter automation for campaign generation</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack ML Developer <br/>
-      <ul>
-        <li>Backend: Implemented K-Means clustering and Apriori algorithms</li>
-        <li>Frontend: Built interactive dashboard using Streamlit</li>
-        <li>Data Processing: Created robust pipelines for customer data</li>
-        <li>ML Models: Developed automated segmentation system</li>
-        <li>Visualization: Implemented interactive charts and graphs</li>
-      </ul>
-      `,
-        techStack: [
-            'Python',
-            'Streamlit',
-            'scikit-learn',
-            'K-Means',
-            'Apriori',
-            'Pandas',
-            'NumPy',
-        ],
-        thumbnail: '/projects/images/businees-segmenter-1.png',
-        longThumbnail: '/projects/images/businees-segmenter-1.png',
-        images: [
-            '/projects/images/businees-segmenter-1.png',
-            '/projects/images/businees-segmenter-2.png',
-            '/projects/images/businees-segmenter-3.png',
-        ],
-    },
-    {
-        title: 'App Success Predictor',
-        slug: 'appsuccesspredictor',
-        techStack: [
-            'Python',
-            'scikit-learn',
-            'Streamlit',
-            'Pandas',
-            'Machine Learning',
-        ],
-        thumbnail: '/projects/images/app-success-2.png',
-        longThumbnail: '/projects/images/app-success-2.png',
-        images: [
-            '/projects/images/app-success-1.png',
-            '/projects/images/app-success-2.png',
-        ],
-        liveUrl: 'https://frontend-model.netlify.app',
-        sourceCode:
-            'https://github.com/VIDHITTS/Google-play-store-analysis.git',
-        year: 2025,
-        description: `Built App Success Predictor using Python, scikit-learn, and Streamlit, implementing machine learning models to predict app success with 85% accuracy. Features real-time predictions and comprehensive analytics. <br/><br/>
-        
-        Developed a robust ML platform for forecasting app performance. Features dynamic input processing, instant success probability scoring, and actionable insights for developers.`,
-        role: `As the ML developer, I:<br/>
-        - Built predictive models with 85% accuracy using scikit-learn.<br/>
-        - Implemented data processing pipelines with Pandas.<br/>
-        - Created interactive dashboard using Streamlit.<br/>
-        - Developed real-time prediction system.<br/>
-        - Designed intuitive UI for data visualization.`,
     },
     {
         title: 'Lets Collab',
@@ -275,54 +188,6 @@ export const PROJECTS: IProject[] = [
         - Developed real-time synchronization using WebSockets.<br/>
         - Created workspace management system for team collaboration.<br/>
         - Designed modern, developer-friendly interactive UI.`,
-    },
-    {
-        title: 'Snapcode',
-        slug: 'snapcode',
-        techStack: ['React', 'FastAPI', 'SQLAlchemy', 'Python'],
-        thumbnail: '/projects/images/snapcode-1.png',
-        longThumbnail: '/projects/images/snapcode-1.png',
-        images: [
-            '/projects/images/snapcode-1.png',
-            '/projects/images/snapcode-2.png',
-            '/projects/images/snapcode-3.png',
-        ],
-        sourceCode: 'https://github.com/VIDHITTS/SnapCode.git',
-        liveUrl: 'https://snapcode-tan.vercel.app',
-        year: 2024,
-        description: `Built Snapcode using React, FastAPI, and SQLAlchemy, implementing real-time code collaboration, robust data processing, and seamless database management for an interactive and intuitive developer experience. <br/><br/>
-        
-        Developed a full-stack platform for code sharing and collaboration. Features secure authentication, real-time code editing, and a modern UI designed for developers.`,
-        role: `As the full-stack developer, I:<br/>
-        - Built the platform using React and FastAPI.<br/>
-        - Implemented real-time code collaboration features.<br/>
-        - Created robust data processing pipelines.<br/>
-        - Integrated SQLAlchemy for database management.<br/>
-        - Designed modern, developer-friendly UI.`,
-    },
-    {
-        title: 'Quiz App',
-        slug: 'quizapp',
-        techStack: ['React', 'Node.js', 'Express.js', 'Prisma'],
-        thumbnail: '/projects/images/quiz-app-1.png',
-        longThumbnail: '/projects/images/quiz-app-1.png',
-        images: [
-            '/projects/images/quiz-app-1.png',
-            '/projects/images/quiz-app-2.png',
-            '/projects/images/quiz-app-3.png',
-        ],
-        sourceCode: 'https://github.com/VIDHITTS/Quiz-app.git',
-        liveUrl: 'https://quiz-app-beta-pearl.vercel.app',
-        year: 2024,
-        description: `Built Quiz App using React, Node.js, Express.js, and Prisma, implementing real-time quiz functionality, secure authentication, and robust database management for an interactive and engaging user experience. <br/><br/>
-        
-        Developed a full-stack quiz platform with real-time scoring and progress tracking. Features secure user authentication, question management, and a modern responsive UI.`,
-        role: `As the full-stack developer, I:<br/>
-        - Built the quiz platform using React and Node.js.<br/>
-        - Implemented Express.js backend with RESTful APIs.<br/>
-        - Integrated Prisma ORM for database management.<br/>
-        - Created real-time quiz functionality and scoring system.<br/>
-        - Designed intuitive and responsive UI.`,
     },
 ];
 

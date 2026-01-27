@@ -57,7 +57,7 @@ const Navbar = () => {
                             href="/"
                             className="text-lg font-anton gradient-text-static hover:opacity-80 transition-all duration-300 tracking-wider"
                         >
-                            {GENERAL_INFO.name.split(' ')[0]}
+                            {GENERAL_INFO.name}
                         </Link>
                     </div>
 

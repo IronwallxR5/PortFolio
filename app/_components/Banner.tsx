@@ -2,7 +2,7 @@
 import ArrowAnimation from '@/components/ArrowAnimation';
 import MagneticButton from '@/components/MagneticButton';
 import Button from '@/components/Button';
-import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import { GENERAL_INFO, SOCIAL_LINKS, PROJECTS, MY_STACK } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -92,7 +92,7 @@ const Banner = () => {
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     <div className="slide-up-and-fade glass rounded-2xl px-6 py-4 animate-float">
                         <h5 className="text-3xl sm:text-4xl font-anton gradient-text-static mb-1.5">
-                            5+
+                            {PROJECTS.length}+
                         </h5>
                         <p className="text-muted-foreground text-sm">
                             Projects Completed
@@ -100,7 +100,7 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade glass rounded-2xl px-6 py-4 animate-float-delayed">
                         <h5 className="text-3xl sm:text-4xl font-anton gradient-text-static mb-1.5">
-                            10+
+                            {Object.values(MY_STACK).flat().length}+
                         </h5>
                         <p className="text-muted-foreground text-sm">
                             Technologies Mastered
