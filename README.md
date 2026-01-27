@@ -1,4 +1,4 @@
-# 🚀 My Portfolio Website
+# 🚀 Padam Rathi - Portfolio
 
 A modern, responsive portfolio showcasing my projects, skills, and experience. Built with Next.js 15, TypeScript, Tailwind CSS, and GSAP animations.
 
@@ -9,6 +9,7 @@ A modern, responsive portfolio showcasing my projects, skills, and experience. B
 -   ⚡ Optimized performance with Next.js 15
 -   🎭 Interactive UI with GSAP and smooth scrolling
 -   🌐 Project showcase with live demos and GitHub links
+-   📊 Dynamic stats that auto-update based on projects and tech stack
 
 ## 🛠 Tech Stack
 
@@ -23,32 +24,32 @@ A modern, responsive portfolio showcasing my projects, skills, and experience. B
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/VIDHITTS/Portfolio.git
-cd Portfolio
-```
+\`\`\`bash
+git clone https://github.com/IronwallxR5/PortFolio.git
+cd PortFolio
+\`\`\`
 
 2. Install dependencies:
 
-```bash
+\`\`\`bash
 npm install
-```
+\`\`\`
 
 3. Run the development server:
 
-```bash
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📁 Project Structure
 
--   `/app` - Next.js app router pages and components
--   `/components` - Reusable UI components
--   `/lib` - Utility functions and data
--   `/public` - Static assets (images, logos)
--   `/types` - TypeScript type definitions
+-   \`/app\` - Next.js app router pages and components
+-   \`/components\` - Reusable UI components
+-   \`/lib\` - Utility functions and data
+-   \`/public\` - Static assets (images, logos)
+-   \`/types\` - TypeScript type definitions
 
 ## 📄 License
 
