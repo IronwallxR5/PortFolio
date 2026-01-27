@@ -1,0 +1,115 @@
+'use client';
+import ArrowAnimation from '@/components/ArrowAnimation';
+import MagneticButton from '@/components/MagneticButton';
+import Button from '@/components/Button';
+import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import React from 'react';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+const Banner = () => {
+    const containerRef = React.useRef<HTMLDivElement>(null);
+
+    // move the content a little up on scroll
+    useGSAP(
+        () => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: 'bottom 70%',
+                    end: 'bottom 10%',
+                    scrub: 1,
+                },
+            });
+
+            tl.fromTo(
+                '.slide-up-and-fade',
+                { y: 0 },
+                { y: -150, opacity: 0, stagger: 0.02 },
+            );
+        },
+        { scope: containerRef },
+    );
+
+    return (
+        <section className="relative overflow-hidden" id="banner">
+            {/* Background gradient mesh */}
+            <div className="absolute inset-0 bg-gradient-mesh opacity-50 pointer-events-none" />
+
+            <ArrowAnimation />
+            <div
+                className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col relative z-[1]"
+                ref={containerRef}
+            >
+                <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
+                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
+                        <span className="gradient-text">FULL STACK</span>
+                        <br /> <span className="ml-4 text-glow">DEVELOPER</span>
+                    </h1>
+                    <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
+                        Hi! I&apos;m{' '}
+                        <span className="font-medium gradient-text-static">
+                            {GENERAL_INFO.name}
+                        </span>
+                        . {GENERAL_INFO.professionalSummary}
+                    </p>
+                    <div className="flex flex-wrap gap-4 mt-9">
+                        <MagneticButton>
+                            <div className="inline-block banner-button slide-up-and-fade">
+                                <Button
+                                    as="link"
+                                    href={`mailto:${GENERAL_INFO.email}`}
+                                    variant="primary"
+                                    className="btn-shine glow-primary"
+                                >
+                                    Contact Me
+                                </Button>
+                            </div>
+                        </MagneticButton>
+
+                        {SOCIAL_LINKS.filter(
+                            (link) =>
+                                link.name === 'LinkedIn' ||
+                                link.name === 'Github',
+                        ).map((link) => (
+                            <MagneticButton key={link.name}>
+                                <a
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="banner-button slide-up-and-fade inline-flex items-center gap-2 px-6 py-3 rounded-full glass-hover font-medium transition-all"
+                                >
+                                    {link.name}
+                                </a>
+                            </MagneticButton>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
+                    <div className="slide-up-and-fade glass rounded-2xl px-6 py-4 animate-float">
+                        <h5 className="text-3xl sm:text-4xl font-anton gradient-text-static mb-1.5">
+                            5+
+                        </h5>
+                        <p className="text-muted-foreground text-sm">
+                            Projects Completed
+                        </p>
+                    </div>
+                    <div className="slide-up-and-fade glass rounded-2xl px-6 py-4 animate-float-delayed">
+                        <h5 className="text-3xl sm:text-4xl font-anton gradient-text-static mb-1.5">
+                            10+
+                        </h5>
+                        <p className="text-muted-foreground text-sm">
+                            Technologies Mastered
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Banner;

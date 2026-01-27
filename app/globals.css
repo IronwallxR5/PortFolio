@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 220 15% 8%;
+        --background-light: 220 15% 12%;
+        --foreground: 220 10% 90%;
+
+        --card: 220 15% 10%;
+        --card-foreground: 220 10% 98%;
+        --popover: 220 15% 10%;
+        --popover-foreground: 220 10% 98%;
+
+        --primary: 165 100% 50%;
+        --primary-foreground: 220 15% 8%;
+        --secondary: 200 100% 55%;
+        --secondary-foreground: 220 15% 8%;
+        --muted: 220 15% 15%;
+        --muted-foreground: 220 10% 60%;
+        --accent: 280 80% 60%;
+        --accent-foreground: 220 10% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 220 10% 98%;
+        --border: 220 15% 20%;
+        --input: 220 15% 15%;
+        --ring: 165 100% 50%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground font-roboto-flex;
+    }
+}
+
+@layer components {
+    .grid {
+        @apply gap-[25px];
+    }
+
+    .markdown-text ul {
+        @apply pl-5 mt-2 list-disc;
+    }
+}
+
+/* Animated Gradient Text */
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(
+        135deg,
+        hsl(var(--primary)) 0%,
+        hsl(var(--secondary)) 25%,
+        hsl(var(--accent)) 50%,
+        hsl(var(--secondary)) 75%,
+        hsl(var(--primary)) 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 6s ease-in-out infinite;
+}
+
+.gradient-text-static {
+    background: linear-gradient(
+        135deg,
+        hsl(var(--primary)) 0%,
+        hsl(var(--secondary)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-hover {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-hover:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: hsl(var(--primary) / 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 60px hsl(var(--primary) / 0.1);
+}
+
+/* Glow Effects */
+.glow-primary {
+    box-shadow: 
+        0 0 20px hsl(var(--primary) / 0.3),
+        0 0 40px hsl(var(--primary) / 0.2),
+        0 0 60px hsl(var(--primary) / 0.1);
+}
+
+.text-glow {
+    text-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* Pulse Glow */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Gradient Border */
+.gradient-border {
+    position: relative;
+    background: hsl(var(--background));
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        hsl(var(--primary)) 0%,
+        hsl(var(--secondary)) 50%,
+        hsl(var(--accent)) 100%
+    );
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Background Gradient Mesh */
+.bg-gradient-mesh {
+    background: 
+        radial-gradient(at 20% 20%, hsl(var(--primary) / 0.15) 0, transparent 50%),
+        radial-gradient(at 80% 80%, hsl(var(--secondary) / 0.1) 0, transparent 50%),
+        radial-gradient(at 40% 60%, hsl(var(--accent) / 0.1) 0, transparent 50%);
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.shimmer {
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        hsl(var(--primary) / 0.1) 50%,
+        transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Underline Animation */
+.animated-underline {
+    position: relative;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        hsl(var(--primary)),
+        hsl(var(--secondary))
+    );
+    transition: width 0.4s ease;
+}
+
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+/* Button Shine Effect */
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.btn-shine:hover::before {
+    animation: shine 0.6s ease;
+}
