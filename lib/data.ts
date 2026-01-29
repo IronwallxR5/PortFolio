@@ -98,6 +98,63 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
+        title: 'Pixel Square',
+        slug: 'pixel-square',
+        liveUrl: 'https://freelancing-website-psi.vercel.app',
+        sourceCode: 'https://github.com/IronwallxR5/Freelancing-Website.git',
+        year: 2026,
+        description: `
+      Built Pixel Square, a comprehensive freelancing platform connecting talented freelancers with businesses and clients worldwide. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>Freelancer Marketplace - Browse and hire top-tier freelancers across multiple categories</li>
+        <li>Service Categories - Development & IT, Graphics Designing, Digital Marketing, Financial Services</li>
+        <li>Freelancer Profiles - Detailed profiles with ratings, skills, and hire functionality</li>
+        <li>Join as Freelancer - Easy registration with skill-based onboarding</li>
+        <li>Service Pages - Dedicated pages for Website, Software, App, and Blockchain Development</li>
+        <li>Platform Stats - 5K+ Active Freelancers, 10K+ Completed Projects, 95% Client Satisfaction</li>
+        <li>Team Section - Meet the founders and their mission</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Modern, responsive UI with elegant green-themed design</li>
+        <li>Multi-page architecture with smooth navigation</li>
+        <li>Interactive freelancer cards with ratings and hire buttons</li>
+        <li>Dynamic service category pages</li>
+        <li>Deployed on Vercel for fast, reliable hosting</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer & Co-Founder <br/>
+      <ul>
+        <li>Frontend: Built modern, responsive UI with elegant design system</li>
+        <li>Features: Implemented freelancer profiles, hiring system, and service pages</li>
+        <li>Navigation: Created multi-page architecture with Home, About, Hire, Join, and Services</li>
+        <li>Design: Crafted cohesive green-themed visual identity</li>
+        <li>Deployment: Configured Vercel for production hosting</li>
+      </ul>
+      `,
+        techStack: [
+            'React',
+            'JavaScript',
+            'CSS',
+            'HTML',
+            'Vercel',
+        ],
+        thumbnail: '/projects/images/pixelsquare-1.png',
+        longThumbnail: '/projects/images/pixelsquare-1.png',
+        images: [
+            '/projects/images/pixelsquare-1.png',
+            '/projects/images/pixelsquare-2.png',
+            '/projects/images/pixelsquare-3.png',
+            '/projects/images/pixelsquare-4.png',
+            '/projects/images/pixelsquare-5.png',
+            '/projects/images/pixelsquare-6.png',
+        ],
+    },
+    {
         title: 'LinkUp.AI',
         slug: 'linkup-ai',
         liveUrl: 'https://link-upfork-one.vercel.app',
