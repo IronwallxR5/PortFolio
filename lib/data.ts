@@ -98,11 +98,71 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
+        title: 'LinkUp.AI',
+        slug: 'linkup-ai',
+        liveUrl: 'https://link-upfork-one.vercel.app',
+        sourceCode: 'https://github.com/nst-sdc/LinkUp.AI.git',
+        year: 2024,
+        description: `
+      Built LinkUp.AI, a revolutionary AI-powered platform for students to build, organize, and showcase their academic journey with smart tools and meaningful connections. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>AI-Powered Profile Management - Generate compelling bios, smart resumes, and project summaries with one click</li>
+        <li>Interactive Portfolio Timeline - Track academic journey with courses, internships, projects, and certifications</li>
+        <li>Student Collaboration Hub - Connect with coding partners, mentors, and teammates for group projects</li>
+        <li>Smart Resume Builder - Convert achievements into professional, downloadable resumes</li>
+        <li>AI Bio Generator - Let AI craft the perfect professional bio with power, precision, and style</li>
+        <li>IT Career Certification Guide - Discover valuable certifications to boost your IT career</li>
+        <li>Latest Tech News - Stay updated with AI, coding, and technology developments</li>
+        <li>Personalized AI Recommendations - Tailored courses, certifications, and job opportunities</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Full-stack application with modern React architecture</li>
+        <li>AI integration for intelligent content generation</li>
+        <li>Beautiful, responsive UI with purple-themed design system</li>
+        <li>Real-time tech news aggregation</li>
+        <li>Deployed on Vercel for fast, reliable hosting</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer <br/>
+      <ul>
+        <li>Frontend: Built modern, responsive UI with React and elegant design system</li>
+        <li>AI Features: Implemented AI-powered bio generator and profile management</li>
+        <li>Content: Created interactive portfolio timeline and certification guide</li>
+        <li>Integration: Connected tech news API for latest updates</li>
+        <li>Collaboration: Built student hub for peer connections</li>
+        <li>Deployment: Configured Vercel for production hosting</li>
+      </ul>
+      `,
+        techStack: [
+            'React',
+            'TypeScript',
+            'AI/ML',
+            'Tailwind CSS',
+            'Node.js',
+            'Vercel',
+        ],
+        thumbnail: '/projects/images/linkup-1.png',
+        longThumbnail: '/projects/images/linkup-1.png',
+        images: [
+            '/projects/images/linkup-1.png',
+            '/projects/images/linkup-2.png',
+            '/projects/images/linkup-3.png',
+            '/projects/images/linkup-4.png',
+            '/projects/images/linkup-5.png',
+            '/projects/images/linkup-6.png',
+        ],
+    },
+    {
         title: 'Retro Games',
         slug: 'retro-games',
         liveUrl: 'https://retrogames-kappa.vercel.app',
         sourceCode: 'https://github.com/IronwallxR5/retrogames',
-        year: 2026,
+        year: 2024,
         description: `
       Built Retro Games, a nostalgic e-commerce platform celebrating the golden era of gaming with vintage games and merchandise. <br/><br/>
       
@@ -154,7 +214,7 @@ export const PROJECTS: IProject[] = [
         slug: 'jarvis-chatbot',
         liveUrl: 'https://jarvis-chat-bot-bice.vercel.app',
         sourceCode: 'https://github.com/IronwallxR5/JARVIS--ChatBot',
-        year: 2026,
+        year: 2025,
         description: `
       Built JARVIS, an advanced AI-powered chatbot assistant using Google's Gemini 2.0 technology for intelligent, conversational interactions. <br/><br/>
       
