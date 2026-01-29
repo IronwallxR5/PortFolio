@@ -98,6 +98,109 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
+        title: 'Retro Games',
+        slug: 'retro-games',
+        liveUrl: 'https://retrogames-kappa.vercel.app',
+        sourceCode: 'https://github.com/IronwallxR5/retrogames',
+        year: 2026,
+        description: `
+      Built Retro Games, a nostalgic e-commerce platform celebrating the golden era of gaming with vintage games and merchandise. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>Vintage Gaming Catalog - Browse classic consoles like Atari, NES, and Sega Genesis</li>
+        <li>Game Library - Explore platformers, RPGs, shooters from the 8-bit era</li>
+        <li>Retro Merchandise - Posters, T-shirts, mugs for gaming enthusiasts</li>
+        <li>Retro Revival Section - Featured classics like Pac-Man and Mario</li>
+        <li>Community Spotlights - User testimonials and gaming stories</li>
+        <li>Blog Section - Articles on retro gaming history and best consoles</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Clean, nostalgic UI design with retro color palette</li>
+        <li>Responsive layout for seamless desktop and mobile experience</li>
+        <li>Smooth navigation with Home, About, and Retro Revival sections</li>
+        <li>Pixel-perfect styling honoring classic gaming aesthetics</li>
+        <li>Deployed on Vercel for fast, reliable hosting</li>
+      </ul>
+      `,
+        role: `
+      Frontend Developer <br/>
+      <ul>
+        <li>UI Design: Created nostalgic retro-themed interface with vintage aesthetics</li>
+        <li>Product Catalog: Built browsable sections for consoles, games, and merchandise</li>
+        <li>Responsive Design: Ensured seamless experience across all devices</li>
+        <li>Content Sections: Implemented blog, community spotlights, and featured products</li>
+        <li>Deployment: Configured Vercel for production hosting</li>
+      </ul>
+      `,
+        techStack: [
+            'React',
+            'JavaScript',
+            'CSS',
+            'Vercel',
+        ],
+        thumbnail: '/projects/images/retrogames-1.png',
+        longThumbnail: '/projects/images/retrogames-1.png',
+        images: [
+            '/projects/images/retrogames-1.png',
+            '/projects/images/retrogames-2.png',
+            '/projects/images/retrogames-3.png',
+        ],
+    },
+    {
+        title: 'JARVIS ChatBot',
+        slug: 'jarvis-chatbot',
+        liveUrl: 'https://jarvis-chat-bot-bice.vercel.app',
+        sourceCode: 'https://github.com/IronwallxR5/JARVIS--ChatBot',
+        year: 2026,
+        description: `
+      Built JARVIS, an advanced AI-powered chatbot assistant using Google's Gemini 2.0 technology for intelligent, conversational interactions. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>Advanced AI Conversations - Powered by Google Gemini 2.0 for natural, context-aware responses</li>
+        <li>Real-time Chat Interface - Smooth, responsive messaging experience</li>
+        <li>Modern UI Design - Sleek dark theme with intuitive user experience</li>
+        <li>Multi-purpose Assistant - Answers questions, generates content, helps with coding, and provides information</li>
+        <li>Clean Architecture - Well-structured codebase for maintainability</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Next.js frontend with modern React patterns</li>
+        <li>Google Gemini 2.0 API integration for AI capabilities</li>
+        <li>Responsive design for seamless mobile and desktop experience</li>
+        <li>Optimized performance with efficient state management</li>
+        <li>Deployed on Vercel for fast, reliable hosting</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack AI Developer <br/>
+      <ul>
+        <li>Frontend: Built modern chat interface with Next.js and React</li>
+        <li>AI Integration: Implemented Google Gemini 2.0 API for intelligent responses</li>
+        <li>UI/UX: Designed sleek dark-themed interface for optimal user experience</li>
+        <li>Architecture: Created clean, maintainable codebase structure</li>
+        <li>Deployment: Configured Vercel for production hosting</li>
+      </ul>
+      `,
+        techStack: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Google Gemini',
+            'Tailwind CSS',
+            'Vercel',
+        ],
+        thumbnail: '/projects/images/jarvis-1.png',
+        longThumbnail: '/projects/images/jarvis-1.png',
+        images: [
+            '/projects/images/jarvis-1.png',
+        ],
+    },
+    {
         title: 'Yoga RAG',
         slug: 'yoga-rag',
         liveUrl: 'https://yoga-y5yy.vercel.app',
