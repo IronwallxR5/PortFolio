@@ -130,6 +130,59 @@ export const PROJECTS: IProject[] = [
         - Created workspace management system for team collaboration.<br/>
         - Designed modern, developer-friendly interactive UI.`,
     },
+        {
+        title: 'WebScout',
+        slug: 'webscout',
+        liveUrl: 'https://web-scout-alpha.vercel.app/',
+        sourceCode: 'https://github.com/IronwallxR5/WebScout',
+        year: 2026,
+        description: `
+      Built WebScout, an AI-powered research assistant that autonomously answers complex questions by planning, searching, filtering, and synthesizing answers from the web. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>Intelligent Query Planning - Breaks vague queries into specific, searchable sub-questions</li>
+        <li>Real-Time Web Search - Fetches live data from the web using Tavily API</li>
+        <li>LLM-Based Content Filtering - Uses batch processing to identify relevant sources efficiently</li>
+        <li>Comprehensive Synthesis - Generates well-structured reports with verifiable citations</li>
+        <li>Hallucination Prevention - Grounds responses in real-time web data for accuracy</li>
+        <li>Intent Classification - Differentiates between research queries and small talk to optimize API usage</li>
+        <li>Sequential Search Design - Intentional approach for better relevance and control</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Backend built with Python and FastAPI for high-performance API endpoints</li>
+        <li>Modern React frontend for seamless user experience</li>
+        <li>Tavily API integration for real-time web search capabilities</li>
+        <li>Pydantic for structured outputs and data validation</li>
+        <li>Stateless architecture for scalability and reliability</li>
+        <li>Batch filtering optimization for efficient source evaluation</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack AI Developer <br/>
+      <ul>
+        <li>Backend: Built FastAPI-based research agent with query planning system</li>
+        <li>Search Integration: Implemented Tavily API for real-time web data retrieval</li>
+        <li>AI Pipeline: Designed LLM-based content filtering and synthesis workflow</li>
+        <li>Intent System: Created intent classifier to differentiate research from chat</li>
+        <li>Frontend: Developed modern React/Next.js interface for research interactions</li>
+        <li>Architecture: Implemented stateless, scalable design with separation of concerns</li>
+        <li>Optimization: Built batch filtering system for efficient source evaluation</li>
+      </ul>
+      `,
+        techStack: [
+            'Python',
+            'FastAPI',
+            'React',
+        ],
+        thumbnail: '/projects/images/webscout-1.png',
+        longThumbnail: '/projects/images/webscout-1.png',
+        images: [
+            '/projects/images/webscout-1.png',
+        ],
+    },
     {
         title: 'Yoga RAG',
         slug: 'yoga-rag',
