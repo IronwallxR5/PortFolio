@@ -4,7 +4,7 @@
 
 A modern, fully responsive personal portfolio showcasing projects, skills, and experience — built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **GSAP** animations.
 
-🌐 **Live:** [padamrathi.vercel.app](https://github.com/IronwallxR5/PortFolio) &nbsp;|&nbsp; 📧 **Contact:** rathipadamr5@gmail.com
+🌐 **Live:** [padamrathi.vercel.app](https://portfolio-ironwallxr5.vercel.app)(https://github.com/IronwallxR5/PortFolio) &nbsp;|&nbsp; 📧 **Contact:** rathipadamr5@gmail.com
 
 ---
 
