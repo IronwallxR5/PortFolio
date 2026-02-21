@@ -98,7 +98,7 @@ PortFolio/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js ≥ 18
+- Node.js ≥ 18.x
 - npm or yarn
 
 ### Installation
