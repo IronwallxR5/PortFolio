@@ -136,7 +136,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | 🐙 GitHub | [IronwallxR5](https://github.com/IronwallxR5) |
 | 👨‍💻 CodeChef | [ironwallxr5](https://www.codechef.com/users/ironwallxr5) |
 | ⚡ Codeforces | [IronwallxR5](https://codeforces.com/profile/IronwallxR5) |
-| 🧩 LeetCode | [ironwallxr5](https://leetcode.com/u/ironwallxr5/) |
+| 🧩 LeetCode | [ironwallxr5](https://leetcode.com/u/ironwallxr5) |
 
 ---
 
