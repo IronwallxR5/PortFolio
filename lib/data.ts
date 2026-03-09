@@ -98,62 +98,6 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'FinTrack',
-        slug: 'fintrack',
-        liveUrl: 'https://fj-be-r2-padam-rathi-nst-pune.vercel.app/dashboard',
-        sourceCode: 'https://github.com/IronwallxR5/FinTrack',
-        year: 2026,
-        description: `
-      Built FinTrack, a comprehensive personal finance tracking application designed to help users monitor budgets, track multi-currency transactions, and receive AI-powered financial insights. <br/><br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>Core Finance Management - Track income and expenses with date, category, description, and currency</li>
-        <li>Multi-Currency Support - Manage 10 different currencies with live exchange rate conversion</li>
-        <li>Budget Monitoring & Alerts - Set category budgets with real-time tracking, UI warnings, and email alerts</li>
-        <li>AI-Powered Intelligence - Conversational financial advisor powered by Groq (Llama-3) and auto-categorisation for transactions</li>
-        <li>Dashboard & Visualisation - Summaries of total income/expenses, monthly trends via Recharts, and budget progress bars</li>
-        <li>Receipt Management - Upload and attach receipt images to transactions</li>
-        <li>Authentication & Security - Stateless JWT authentication with secure cookies and Google OAuth integration</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Node.js backend with Express and raw SQL execution (pg module) for advanced query optimisation</li>
-        <li>Interactive and responsive frontend dashboard built with modern React features</li>
-        <li>Migration-first schema management to ensure predictable database evolution</li>
-        <li>Server-side cross-currency budget aggregation using cached exchange rates</li>
-        <li>Asynchronous email notifications (SendGrid) and deduplication for budget alerts</li>
-        <li>Robust AI integration with graceful degradation handling and fallback strategies</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      <ul>
-        <li>Database Modeling: Designed a raw SQL-based PostgreSQL schema with explicit migrations and constraints</li>
-        <li>Backend Architecture: Built robust Node API with comprehensive controllers, middleware, and services</li>
-        <li>Financial Logic: Implemented complex server-side cross-currency budget calculations using advanced SQL features</li>
-        <li>AI & Integration: Integrated Groq LLM for a smart financial advisor and auto-categorisation tool</li>
-        <li>Authentication: Setup Google OAuth and stateless JWT security</li>
-        <li>Frontend: Designed visually appealing real-time dashboards with Recharts</li>
-      </ul>
-      `,
-        techStack: [
-            'Node.js',
-            'Express',
-            'PostgreSQL',
-            'React',
-            'Next.js',
-            'Groq API',
-            'Google OAuth',
-        ],
-        thumbnail: '/projects/images/fintrack-1.png',
-        longThumbnail: '/projects/images/fintrack-1.png',
-        images: [
-            '/projects/images/fintrack-1.png',
-        ],
-    },
-    {
         title: 'Lets Collab',
         slug: 'letscollab',
         techStack: [
@@ -296,6 +240,62 @@ export const PROJECTS: IProject[] = [
             '/projects/images/yogaflow-1.png',
             '/projects/images/yogaflow-2.png',
             '/projects/images/yogaflow-3.png',
+        ],
+    },
+    {
+        title: 'FinTrack',
+        slug: 'fintrack',
+        liveUrl: 'https://fj-be-r2-padam-rathi-nst-pune.vercel.app/dashboard',
+        sourceCode: 'https://github.com/IronwallxR5/FinTrack',
+        year: 2026,
+        description: `
+      Built FinTrack, a comprehensive personal finance tracking application designed to help users monitor budgets, track multi-currency transactions, and receive AI-powered financial insights. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>Core Finance Management - Track income and expenses with date, category, description, and currency</li>
+        <li>Multi-Currency Support - Manage 10 different currencies with live exchange rate conversion</li>
+        <li>Budget Monitoring & Alerts - Set category budgets with real-time tracking, UI warnings, and email alerts</li>
+        <li>AI-Powered Intelligence - Conversational financial advisor powered by Groq (Llama-3) and auto-categorisation for transactions</li>
+        <li>Dashboard & Visualisation - Summaries of total income/expenses, monthly trends via Recharts, and budget progress bars</li>
+        <li>Receipt Management - Upload and attach receipt images to transactions</li>
+        <li>Authentication & Security - Stateless JWT authentication with secure cookies and Google OAuth integration</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Node.js backend with Express and raw SQL execution (pg module) for advanced query optimisation</li>
+        <li>Interactive and responsive frontend dashboard built with modern React features</li>
+        <li>Migration-first schema management to ensure predictable database evolution</li>
+        <li>Server-side cross-currency budget aggregation using cached exchange rates</li>
+        <li>Asynchronous email notifications (SendGrid) and deduplication for budget alerts</li>
+        <li>Robust AI integration with graceful degradation handling and fallback strategies</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer <br/>
+      <ul>
+        <li>Database Modeling: Designed a raw SQL-based PostgreSQL schema with explicit migrations and constraints</li>
+        <li>Backend Architecture: Built robust Node API with comprehensive controllers, middleware, and services</li>
+        <li>Financial Logic: Implemented complex server-side cross-currency budget calculations using advanced SQL features</li>
+        <li>AI & Integration: Integrated Groq LLM for a smart financial advisor and auto-categorisation tool</li>
+        <li>Authentication: Setup Google OAuth and stateless JWT security</li>
+        <li>Frontend: Designed visually appealing real-time dashboards with Recharts</li>
+      </ul>
+      `,
+        techStack: [
+            'Node.js',
+            'Express',
+            'PostgreSQL',
+            'React',
+            'Next.js',
+            'Groq API',
+            'Google OAuth',
+        ],
+        thumbnail: '/projects/images/fintrack-1.png',
+        longThumbnail: '/projects/images/fintrack-1.png',
+        images: [
+            '/projects/images/fintrack-1.png',
         ],
     },
     {
