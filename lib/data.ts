@@ -287,10 +287,7 @@ export const PROJECTS: IProject[] = [
             'Node.js',
             'Express',
             'PostgreSQL',
-            'React',
-            'Next.js',
-            'Groq API',
-            'Google OAuth',
+            'React
         ],
         thumbnail: '/projects/images/fintrack-1.png',
         longThumbnail: '/projects/images/fintrack-1.png',
