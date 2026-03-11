@@ -287,7 +287,7 @@ export const PROJECTS: IProject[] = [
             'Node.js',
             'Express',
             'PostgreSQL',
-            'React
+            'React'
         ],
         thumbnail: '/projects/images/fintrack-1.png',
         longThumbnail: '/projects/images/fintrack-1.png',
