@@ -293,6 +293,11 @@ export const PROJECTS: IProject[] = [
         longThumbnail: '/projects/images/fintrack-1.png',
         images: [
             '/projects/images/fintrack-1.png',
+            '/projects/images/fintrack-2.png',
+            '/projects/images/fintrack-3.png',
+            '/projects/images/fintrack-4.png',
+            '/projects/images/fintrack-5.png',
+            '/projects/images/fintrack-6.png'
         ],
     },
     {
